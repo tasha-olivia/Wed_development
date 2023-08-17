@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .container {
+      display: grid;
+      width: 748px;
+      height: 748px;
+      background-color: #000;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+      /* place-items: center;
+      justify-content: center; */
+      
+    }
+    .item {
+      background-color: #F0F1EC
+    }
+
+    .elt1 {
+      background-color: #E72F24;
+    }
+    .elt2 {
+      grid-column-start: 2;
+      grid-column-end: -1;
+      /* background-color: #F0F1EC; */
+    }
+    .elt3 {
+      /* background-color: #F0F1EC; */
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    .elt4 {
+      grid-area: 2 / 2 / 4 / 4;
+    }
+    .elt5, .elt9 {
+      background-color: #004592;
+    }
+    .elt6 {
+      grid-row-start: 3;
+      grid-row-end: 5;
+      /* grid-row: 3 5; */
+    }
+    .elt8 {
+      background-color: #F9D01E;
+    }
+
+
+  </style>
+</head>
+
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="item elt1"></div>
+    <div class="item elt2"></div>
+    <div class="item elt3"></div>
+    <div class="item elt4"></div>
+    <div class="item elt5"></div>
+    <div class="item elt6"></div>
+    <div class="item elt7"></div>
+    <div class="item elt8"></div>
+    <div class="item elt9"></div>
+
+  </div>
+
+</body>
+
+</html>
